@@ -16,11 +16,14 @@ say_aloha <- function(name, color) {
                    emo::ji("sunny"),
                    emo::ji("ocean"))
 
-  if (color == "green"){
+  if (color == "green") {
     cat(crayon::bgGreen(message))
-  }else if(color == "blue"){
+  } else if(color == "blue") {
     cat(crayon::bgBlue(message))
-  } else {
-    stop("Color not available")
-  }
+  } else if (color == "red") {
+    cat(crayon::bgRed(message))
+  } else if (color == "cyan") {
+    cat(crayon::bgCyan(message))
+  } else
+    stop("Color not available or must be all lowercase")
 }
