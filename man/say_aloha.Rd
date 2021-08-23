@@ -4,7 +4,7 @@
 \alias{say_aloha}
 \title{Says Aloah to a friend}
 \usage{
-say_aloha(name)
+say_aloha(name, color)
 }
 \arguments{
 \item{name}{a character}
