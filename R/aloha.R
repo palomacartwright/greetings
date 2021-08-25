@@ -14,7 +14,8 @@ say_aloha <- function(name, color) {
                    name,
                    emo::ji("palm_tree"),
                    emo::ji("sunny"),
-                   emo::ji("ocean"))
+                   emo::ji("ocean"),
+                   emo::ji("rainbow"))
 
   if (color == "green") {
     cat(crayon::bgGreen(message))
